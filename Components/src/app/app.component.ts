@@ -33,6 +33,14 @@ import { Component } from '@angular/core';
           // Eg.    selector: [app-root]
           // In html, use this as attribute <div app-root ></div>
   selector: 'app-root',
+
+
+  // We can also use 'template' property for inline HTML instead of using templateUrl for the link to the HTML.
+  // If we have to write multiple lines, we can make use of backtick(`)
+  // Eg. 
+  // template: "<div>Inline HTML</div>"
+  // template: `<div>  Multiple Lines <div>
+  //             <h1> Hey </h1>
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
