@@ -62,4 +62,3 @@ We can use selector in 3 types ->
             h1{
                 color:red;
             }`]
----
