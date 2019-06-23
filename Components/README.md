@@ -43,11 +43,12 @@ We can use selector in 3 types ->
 # template property
 ---
 * We can also use 'template' property for inline HTML instead of using templateUrl for the link to the HTML.
-  If we have to write multiple lines, we can make use of backtick(`)
+  If we have to write multiple lines, we can make use of backtick.
   Eg. 
-  `template: "<div>Inline HTML</div>"`
-  `template: ```<div>  Multiple Lines <div>`
-              ``<p>Hey</p>``
+  ```javascript
+  template: "<div>Inline HTML</div>"
+  template: `<div>  Multiple Lines <div>
+              <p>Hey</p>`
 
 ---
 
@@ -56,6 +57,7 @@ We can use selector in 3 types ->
 ---
 
 * We can use style to specify the the styling
+```javascript
     style: [`
             h1{
                 color:red;
