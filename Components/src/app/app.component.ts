@@ -24,14 +24,14 @@ import { Component } from '@angular/core';
 
   // We can use selector in 3 types ->
   // 1.) As an html tag ->
-          // Eg.  selector: 'app-root'
-          // In html file, use this as Tag  <app-root>
+  //         Eg.  selector: 'app-root'
+  //         In html file, use this as Tag  <app-root>
   // 2.) As a class ->
-          // Eg.   selector: '.app-root'
-          // In html, use as class  <div class="app-root"></div>
+  //         Eg.   selector: '.app-root'
+  //         In html, use as class  <div class="app-root"></div>
   // 3.) As an attribute ->
-          // Eg.    selector: [app-root]
-          // In html, use this as attribute <div app-root ></div>
+  //         Eg.    selector: [app-root]
+  //         In html, use this as attribute <div app-root ></div>
   selector: 'app-root',
 
 
@@ -40,7 +40,9 @@ import { Component } from '@angular/core';
   // Eg. 
   // template: "<div>Inline HTML</div>"
   // template: `<div>  Multiple Lines <div>
-  //             <h1> Hey </h1>
+  //             <h1> Hey </h1>`
+
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
