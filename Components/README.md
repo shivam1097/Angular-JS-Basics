@@ -14,7 +14,7 @@
 
 * We can create a component using Angular CLI by Typing following command->
 
-* ng g c component_name
+* [ng g c component_name]
     Here g is for generate
     c is for component.
 
@@ -29,14 +29,14 @@
 ---
 We can use selector in 3 types ->
   * As an html tag ->
-          Eg.  selector: 'app-root'
-          In html file, use this as Tag  <app-root>
+          Eg.  [selector: 'app-root']
+          In html file, use this as Tag  [<app-root>]
   * As a class ->
           Eg.   selector: '.app-root'
-          In html, use as class  <div class="app-root"></div>
+          In html, use as class  [<div class="app-root"></div>]
   * As an attribute ->
           Eg.    selector: [app-root]
-          In html, use this as attribute <div app-root ></div>
+          In html, use this as attribute [<div app-root ></div>]
 
 ---
 
@@ -45,9 +45,9 @@ We can use selector in 3 types ->
 * We can also use 'template' property for inline HTML instead of using templateUrl for the link to the HTML.
   If we have to write multiple lines, we can make use of backtick(`)
   Eg. 
-  template: "<div>Inline HTML</div>"
+  [template: "<div>Inline HTML</div>"
   template: `<div>  Multiple Lines <div>
-              <h1> Hey </h1>`
+              <p>Hey</p>`]
 
 ---
 
