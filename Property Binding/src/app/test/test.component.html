@@ -1,0 +1,20 @@
+<h1>This is the example of Property binding</h1>
+
+We can use property binding to set the id of a element.
+<input type="text" value="Shivam" [id]="myId">
+
+Property binding can also be done using following syntax -
+<input type="text" value="Shivam" bind-id="myId">
+
+We can also use interpolation to set the id of a element.
+<input type="text" value="Shivam" id="{{myId}}">
+
+But it only works for String.
+If we try ->
+<input type="text" value="Shivam" [id]="myId" disabled="{{isDisabled}}">
+
+It will not work.
+
+We have to use property binding for such cases.
+<input type="text" value="Shivam" [id]="myId" [disabled]="isDisabled">
+<button (click)="toggleInput()">Toggle last input field</button>
