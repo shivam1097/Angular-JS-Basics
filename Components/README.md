@@ -30,7 +30,7 @@
 We can use selector in 3 types ->
   * As an html tag ->
           Eg.  `selector: 'app-root'`
-          In html file, use this as Tag  `<app-root>`
+          In html file, use this as Tag  `<app-root></app-root>`
   * As a class ->
           Eg.   `selector: '.app-root'`
           In html, use as class  `<div class="app-root"></div>`
