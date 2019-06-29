@@ -22,6 +22,7 @@ export class TestComponent implements OnInit {
     "special":this.isSpecial
   }
   constructor() { }
+  
   ngOnInit() {
   }
 
