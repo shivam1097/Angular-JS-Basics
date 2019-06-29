@@ -1,0 +1,16 @@
+
+<h1> Two way binding is used to allow the flow of data from 'Template(html file) to class' (Event Binding) and 'from class to the template'(Property binding) </h1>
+
+
+Here we are using input field and want to display the data as entered in the field. <br>
+So first we have to use Event binding to transfer the data from html to class. <br>
+Then we use Property binding to make flow from class to html. <br>
+This all can be done using 'ngModel' <br>
+We have to write [(ngModel)]= "  ", here () for event binding and [] for property binding. <br>
+<input  [(ngModel)]="name" type="text"> <br>
+You Entered : {{name}}
+<br><br><br><br>
+If we do not use 2 way binding( ngModel ), we have to do this much task.
+<input #inp type="text" (keyup)="updateValue(inp)" > <br>
+
+You Entered : {{updatedValue}}
