@@ -1,0 +1,29 @@
+
+<h1> ngFor is one of the Structural directives and can be used to iterate over the list  of items.</h1>
+
+
+
+<!-- ngFor can be used as -  -->
+<div *ngFor="let color of colors">   <!-- colors is defined in the .ts file-->
+    <li>{{color}}</li>
+</div>
+
+We can also use the index number as follows
+<div *ngFor="let color of colors; index as i">
+    <h3>Index : {{i}}  Color : {{color}}</h3>
+</div>
+
+
+We can also find the first and last item.
+<div *ngFor="let color of colors; first as f ; last as l">
+    <h3>isFirst : {{f}}  Color : {{color}}</h3>
+    <h3>isLast : {{l}}  Color : {{color}}</h3>
+</div>
+
+We can also find items at even or odd index.
+<div *ngFor="let color of colors; even as e ; odd as o">
+    <h3>Even Index : {{e}}  Color : {{color}}</h3>
+    <h3>Odd Index : {{o}}  Color : {{color}}</h3>
+</div>
+
+
