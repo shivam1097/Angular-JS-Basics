@@ -1,0 +1,15 @@
+
+<h1>Style binding can be used to dynamically change the style of the element</h1>
+
+Using normal styling
+<h2 style="color:red;">Shivam</h2>
+
+Using Style binding
+<h2 [style.color]="'orange'">Shivam</h2>
+
+We can also use ternary operator
+<h2 [style.color]="isError ? 'red' : 'green'">Shivam</h2>
+
+We can also use ngStyle to apply set of styles
+<h2 [ngStyle]="styleObject">Shivam</h2>
+
