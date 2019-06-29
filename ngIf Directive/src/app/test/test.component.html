@@ -1,0 +1,34 @@
+
+<h1> ngIf is one of the Structural directives and can be used as *ngIf="boolean value"</h1>
+
+We can use the ngIf with html elements to display or hide that element based on some boolean value.
+<h2 *ngIf="displayName">{{name}}</h2> 
+<h2 *ngIf="!displayName">Name is Hidden !</h2>
+
+<br>
+
+We can also use else with ngIf as follows
+<h2 *ngIf="displayName; else  elseBlock">{{name}}</h2>
+
+<ng-template #elseBlock>
+    This is the else block. 
+    ng-template can be used as a container for the else body and can be referenced by Template Reference Variable.
+    <h2>Name is Hidden !</h2>
+</ng-template>
+
+
+We can also put the if and else part in separate ng-template block and then refer to it using a html tag.
+<div *ngIf="displayName; then trueBlock; else falseBlock"></div>
+
+<ng-template #trueBlock>
+    <h2>{{name}}</h2>
+</ng-template>
+
+<ng-template #falseBlock>
+    <h2>Name is Hidden !</h2>
+</ng-template>
+    
+    
+ 
+
+
