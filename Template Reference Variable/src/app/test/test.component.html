@@ -1,0 +1,12 @@
+
+<h1> Template Reference Variable is used to refer the HTML element and all its properties and can be used in the class.</h1>
+
+T.R.V can be created using #varName in the HTML tag
+<input  #myInput type="text" value="Default Value">
+<!-- Now myInput can be used to access all the properties of above input tag -->
+
+We can pass the T.R.V to the function and modify the element property.
+<button (click)="changeInputText(myInput)">Change Input Text</button>
+
+<!-- We can also pass event info. using $event. -->
+<!-- <button (click)="handleClick1($event)">Get event type</button> -->
