@@ -1,0 +1,17 @@
+<h1> This is a class binding example</h1>
+
+Normal assignment of class
+<h2 class="success">Shivam</h2>
+
+Using class binding
+<h2 [class]="successClass" >Shivam</h2>
+
+Using boolean values
+<!-- If there is a error,assign danger class. -->
+<h2 [class.danger]="isError">Shivam</h2>
+
+<!-- if the text is special, assign special class -->
+<h2 [class.special]="isSpecial">Shivam</h2>
+
+Using ng-class 
+<h2 [ngClass]="successClass">Shivam</h2>

@@ -1,0 +1,11 @@
+.success{
+    color: green;
+}
+
+.danger{
+    color: red;
+}
+
+.special{
+    font-style: italic;
+}
