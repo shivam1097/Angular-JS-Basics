@@ -1,0 +1,16 @@
+
+<h1> ngSwitch is one of the Structural directives and can be used as switch statement in programming languages.</h1>
+
+<input  [(ngModel)]="color" type="text" placeholder="Enter Red, Green or Blue.">
+
+<!-- Switch can be used as -  -->
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'Red'">Red color picked !</div>
+    <div *ngSwitchCase="'Green'">Green color picked !</div>
+    <div *ngSwitchCase="'Blue'">Blue color picked !</div>
+    <div *ngSwitchDefault>No color picked !</div>
+</div>
+    
+ 
+
+
