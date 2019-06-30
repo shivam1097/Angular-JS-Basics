@@ -12,7 +12,7 @@ export class TestComponent implements OnInit {
 
   // We can also use custom name by using following syntax
   @Input('nameFromParent') receivedName;
-  // Here we are telling that the name of property sent by the app component is still 'dataFromParent', but we are using it as 'name' here. 
+  // Here we are telling that the name of property sent by the app component is still 'dataFromParent', but we are using it as 'receivedName' here. 
 
 
   // We can't directly send the data from child component to parent component.

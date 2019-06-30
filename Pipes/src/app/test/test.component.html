@@ -1,0 +1,53 @@
+
+<h1> Pipes can be used to filter or modify some data before displaying it.We can also create custom pipes and directives.</h1>
+
+<h2>Here are some predefined pipes which are applicable to string type properties.</h2>
+
+<h3>{{name | uppercase}}</h3>
+<h3>{{name | lowercase}}</h3>
+<h3>{{titleCaseWord | titlecase}}</h3>
+<h3>{{name | slice:3:5}}</h3>   <!-- index starts from 0 and 3 is included and 5 is excluded -->
+
+
+<h2>We also have the json pipe to represent the object in JS object notation.</h2>
+<h3>{{person | json }}</h3>
+
+<h2>There are also some predefined number pipes which can ne applied to numbers.</h2>
+
+<h3>{{ 2.229 | number:'1.2-3'}}</h3>
+<!-- Here number pipe takes a string type argument which has specific meaning ! -->
+
+<!-- In 1.2-3 ->
+
+    1 -> indicates minimum number if integer digits before decimal.
+    . -> indicates after decimal
+    2 -> indicates minimum number of digits after decimal.
+    - -> to
+    3 -> indicates maximum number of digits after decimal.
+
+So '1.2-3' indicates min 1 digit before decimal and min 2 and max 3 digits after decimal. -->
+
+<h3>{{ 45.343434 | number:'3.0-0'}}</h3>  <!-- 045 -->
+
+<h3>{{ 45434.332222 | number:'4.5-7'}}</h3>  <!-- 45,434.332222 -->
+
+<h3>{{ 45434.332222 | number:'10.2-4'}}</h3>  <!-- 0,000,045,434.3322 -->
+
+
+<h2>We also have percent pipe which displays the number in %</h2>
+<h3>{{ .29 | percent }}</h3>   <!-- 29% -->
+
+<h3>There is a currency pipe to represent the number in currency. By default it represents the  number in $. We can specify the currency code as param for custom currency. </h3>
+
+<h3>{{ 45.3432 | currency }}</h3>    <!-- $45.34 -->
+<h3>{{ 54.323 | currency:'GBP'}}</h3> <!-- GBP - Great Britain Pounds £54.32 -->
+<h3>{{ 53454234.323 | currency:'INR'}}</h3> <!--₹53,454,234.32-->
+
+<h2>We can also specify to show currency code instead of symbol.</h2>
+
+<h3>{{ 53454234.323 | currency:'EUR' : 'code'}}</h3> <!-- EUR53,454,234.32 -->
+
+<h2>We also have the date pipe</h2>
+<h3>{{ date }}</h3>  <!-- Not used any pipe-->
+
+<h3>{{date | date }}</h3>
