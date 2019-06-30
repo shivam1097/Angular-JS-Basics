@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <h2> {{ receivedMessage }}</h2>
+  <app-test   [nameFromParent]="sentName" [colorFromParent]="sentColor"  (childEvent)="receivedMessage=$event"></app-test>
+<!-- Here receivedMessage=$event, receivedMessage is the property received by the child component and defined in the parent component and $event refers the argument passed to emit() in the fireEvent method in test.component.ts -->
