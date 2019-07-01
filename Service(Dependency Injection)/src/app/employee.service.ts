@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-
+// It is used, if in case Employee Service might have another dependency.
+// Without this decorator, this class is a simple class.
 @Injectable({
   providedIn: 'root'
 })

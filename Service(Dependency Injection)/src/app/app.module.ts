@@ -19,7 +19,6 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
     AppRoutingModule,
     FormsModule
   ],
-
   // Here we are registering the service at AppModule level so that all it's child can access it.
   providers: [EmployeeService],
   bootstrap: [AppComponent]
